@@ -1,0 +1,261 @@
+/* Kauã de Albuquerque Almeida */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #555;
+    --light-gray: #f5f5f5;
+    --primary: #007bff;
+    --secondary: #004080;
+    --success: #28a745;
+    --danger: #dc3545;
+    --border-radius: 10px;
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --transition: 0.3s ease-in-out;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--light-gray);
+    color: var(--gray);
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: var(--white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+/* ================================
+   🔹 Cabeçalhos e textos
+=================================== */
+h1,
+h2,
+h3 {
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* ================================
+         Navegação / Botões
+=================================== */
+a {
+    text-decoration: none;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--secondary);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.button:hover {
+    background-color: var(--secondary);
+    color: var(--white);
+
+}
+
+/* ================================
+   🧾 Tabela
+=================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: var(--secondary);
+    color: var(--white);
+}
+
+tr:hover {
+    background-color: #f0f8ff;
+    color: var(--black);
+}
+
+/* ================================
+   🧠 Formulários
+=================================== */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input[type="text"],
+input[type="email"] {
+    padding: 10px;
+    border-radius: var(--border-radius);
+    border: 1px solid #ccc;
+    transition: var(--transition);
+    font-size: 15px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: var(--primary);
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+/* ================================
+   ✅ Mensagens e Layout extra
+=================================== */
+.success {
+    background-color: var(--success);
+    color: var(--white);
+    padding: 10px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.error {
+    background-color: var(--danger);
+    color: var(--white);
+    padding: 10px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--gray);
+    font-size: 0.9em;
+}
+
+/* assets/css/style.css */
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 40px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.4);
+  backdrop-filter: blur(8px);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #00c3ff;
+}
+
+a.button {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #00c3ff;
+  border-radius: 8px;
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+a.button:hover {
+  background: #0096c7;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: rgba(0,0,0,0.3);
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+th {
+  color: #00c3ff;
+}
+
+button, input[type="submit"] {
+  background: #00c3ff;
+  border: none;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0096c7;
+}
+
+input, label {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.errors ul {
+  background: #ff4d4d;
+  padding: 10px;
+  border-radius: 8px;
+  list-style: none;
+  margin: 0 0 15px 0;
+}
